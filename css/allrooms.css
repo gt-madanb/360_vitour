@@ -1,0 +1,96 @@
+
+
+
+#allRooms {
+	display:none;
+	position: absolute;
+	z-index: 50000;
+	background: none repeat scroll 0 0 #255f85;
+	padding: 10px;
+}
+
+
+#allRooms .group {
+	border-left: 1px solid #dcddde;
+	float: left;
+	height: 100%;
+	margin: 0 0 0 1.05%;
+	padding: 0 0 0 1%;
+	width: 31%;
+}
+
+.allRooms .group.first {
+    border-left: 0 none;
+}
+
+#allRooms.centered .group .scene .text {
+	color:#FFFFFF;
+	font-size: 0.8em;
+	line-height: 1.2em;
+	padding-left: 5px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+#allRooms .group h2 {
+    font-size: 1em;
+    margin-top: 1em;
+    color:#FFFFFF;
+	margin-bottom: 0.2em;
+}
+
+  	
+#allRooms.centered .group .scene .text:hover {
+    background-color: #153b54 !important;
+  }
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1170px) {
+
+}
+
+/*  150 x 480  */
+@media only screen and (min-width: 150px) and (max-width: 480px) and (orientation: portrait) {
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) and (orientation: portrait) {
+
+}
+
+@media only screen and (min-width: 360px) and (max-width: 640px) and (orientation: landscape) {
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: portrait)  {
+
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation: landscape) {
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+
+@media only screen and (max-width: 768px) {
+
+}
+

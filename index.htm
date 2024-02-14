@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<title>Yuan Ze University</title>
+<link rel = "icon"  href="img/logo.png" type = "image/x-icon">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="js/style.css">
+<link rel="stylesheet" href="css/interface.css">
+<link rel="stylesheet" href="css/update.css"> 
+<link rel="stylesheet" href="css/allrooms.css"> 
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script>
+	const beforeUnloadListener = (event) => {
+	  event.preventDefault();
+	  return event.returnValue = "Yuan Ze University";
+	};
+	
+	//this piece of code will trigger a pupup message
+	addEventListener("beforeunload", beforeUnloadListener, {capture: true});
+
+ /*---------------------------------------*/
+ /*	NAVIGATION AND NAVIGATION VISIBLE ON SCROLL
+ /*---------------------------------------*/
+ $( window ).on( "load", function() {
+    mainNav();
+    $(window).scroll(function() {
+        mainNav();
+    });
+    function mainNav() {
+        var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+        if (top > 40) $('.navbar-fixed-top').stop().animate({
+            "opacity": '1',
+            "top": '0'
+        });
+        else $('.navbar-fixed-top').stop().animate({
+            "top": '-70',
+            "opacity": '0'
+        });
+
+	}
+     });
+</script>
+</head>
+<body class="multiple-scenes view-control-buttons">
+
+
+
+<div id="sceneList">
+	<main class="cd-main-content">
+
+		<nav class="cd-side-nav" class="enabled">
+			<ul>
+				<li class="has-children navmain">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>門口往元智一館方向(The direction from the entrance to the Yuan Ze Building 1)</a>
+					<ul>
+						<!--<a href="#0" class="scene" data-id="0-entrance"><li class="text">Town Entrance Outside</li></a>-->
+						<a href="#" class="scene" data-id="0-entrance"><li class="text">元智大學門口(Entrance)</li></a>
+						<a href="#" class="scene" data-id="0-the-direction-from-entrance-to-slope"><li class="text">大門往斜坡方向(The direction from entrance to slope)</li></a>
+						<a href="#" class="scene" data-id="1-slope-"><li class="text">坡道(Slope)</li></a>
+						<a href="#" class="scene" data-id="2-entrance-of-the-main-camps-"><li class="text">主校區入口(Entrance of the main camps)</li></a>
+						<a href="#" class="scene" data-id="3-1the-red-brick-road-to-the-front-door-of-the-yuan-ze-building-1"><li class="text">往一館前門的紅磚道(The red brick road to the front door of the Yuan Ze Building 1)</li></a>
+						<a href="#" class="scene" data-id="4-1the-front-door-of-the-yuan-ze-building-1-"><li class="text">元智大學一館前門(The front door of the Yuan Ze Building 1)</li></a>
+					</ul>
+				</li>
+				<li class="has-children navstudent">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智一館一樓(The first floor of the Yuan Ze Building 1)</a>
+					<ul>
+						<a href="#" class="scene" data-id="5-the-stairs-from-the-first-floor-to-the-second-floor-of-the-front-door"><li class="text">前門的一樓往二樓的樓梯(The stairs from the first floor to the second floor of the front door)</li></a>
+						<a href="#" class="scene" data-id="6-the-stairs-from-the-first-floor-to-the-second-floor-of-the-back-door"><li class="text"></li>後門的一樓往二樓的樓梯(The stairs from the first floor to the second floor of the back door)</a>
+						<a href="#" class="scene" data-id="7-1the-back-door-of-the-yuan-ze-building-1"><li class="text"></li>元智大學一館後門(The back door of the Yuan Ze Building 1)</a>
+						<a href="#" class="scene" data-id="8-1the-red-brick-road-to-the-back-door-of-the-yuan-ze-building-1"><li class="text">往一館後門的紅磚道(The red brick road to the back door of the Yuan Ze Building 1)</li></a>
+						<!--<a href="#" class="scene" data-id="14-bridge"><li class="text">Bridge</li></a>-->
+						<!--<a href="#" class="scene" data-id="29-he-lounge"><li class="text">HE Lounge</li></a>-->
+						
+					</ul>
+				</li>
+				
+				<li class="has-children navbuilding">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智一館二樓(The second floor of the Yuan Ze Building 1)</a>
+					<ul>
+						<a href="#" class="scene" data-id="9-elevator-entrance-from-the-2-floor-to-the-7-floor"><li class="text">前門的二樓往七樓的電梯入口(Elevator entrance from the second Floor to the 7th Floor)</li></a>
+						<a href="#" class="scene" data-id="10-2the-stairs-from-the-second-floor-to-the-third-floor-of-the-front-door"><li class="text">前門的二樓樓梯口(The stairs from the second floor to the third floor of the front door)</li></a>
+						<a href="#" class="scene" data-id="11-office-entrance-of-admission-section"><li class="text">招生組門口(Office entrance of Admission Section)</li></a>
+						<a href="#" class="scene" data-id="12-admission-section-1206r"><li class="text">招生組(Admission Section)-1206R</li></a>
+						<a href="#" class="scene" data-id="13-office-of-the-director-of-the-admission-section"><li class="text">招生組組長辦公室(Office of the Director of the Admission Section)</li></a>
+						<a href="#" class="scene" data-id="14-office-entrance-of-academic-affairs"><li class="text">教務處處本部門口(Office entrance of Academic Affairs)</li></a>
+						<a href="#" class="scene" data-id="15-office-of-academic-affairs-1208r"><li class="text">教務處處本部(Office of Academic Affairs)-1208R</li></a>
+						<a href="#" class="scene" data-id="16-office-of-the-provost-office-of-academic-affairs"><li class="text">教務長辦公室(Office of the Provost, Office of Academic Affairs)</li></a>
+						<a href="#" class="scene" data-id="17-office-entrance-of-curriculum-section"><li class="text">課務組門口(Office entrance of Curriculum Section)</li></a>
+						<a href="#" class="scene" data-id="18-curriculum-section-1210r"><li class="text">課務組(Curriculum Section)-1210R</li></a>
+						<a href="#" class="scene" data-id="19-office-of-the-director-of-the-curriculum-section"><li class="text">課務組組長辦公室(Office of the Director of the Curriculum Section)</li></a>
+						<a href="#" class="scene" data-id="20-office-entrance-of-registration-section"><li class="text">註冊組門口(Office entrance of Registration Section)</li></a>
+						<a href="#" class="scene" data-id="21-registration-section-1209r"><li class="text">註冊組(Registration Section)-1209R</li></a>
+						<a href="#" class="scene" data-id="22-office-of-the-director-of-the-registration-section"><li class="text">註冊組組長辦公室(Office of the Director of the Registration Section)</li></a>
+						<a href="#" class="scene" data-id="23-2the-stairs-from-the-second-floor-to-the-third-floor"><li class="text">二樓樓梯口(The stairs from the second floor to the third floor)</li></a>
+						<a href="#" class="scene" data-id="24-elevator-entrance-from-the-2-floor-to-the-7-floor-of-the-back-door"><li class="text">後門的二樓往七樓的電梯入口(Elevator entrance from the second floor to the 7th floor of the back door)</li></a>
+					</ul>
+				</li>
+				
+				<li class="has-children navsports">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智一館七樓(The 7th floor of the building1)</a>
+					<ul>
+						<a href="#" class="scene" data-id="25-elevator-entrance-from-the-7-floor-to-the-2-floor-2"><li class="text">後門的七樓往二樓的電梯入口(Elevator entrance from the 7th floor to the second floor of the back door)</li></a>
+						<a href="#" class="scene" data-id="26-7entrance-of-the-office-of-academic-affairs"><li class="text">七樓教務處入口(Entrance of the Office of Academic Affairs)</li></a>
+						
+						<a href="#" class="scene" data-id="27-tec_office-entrance-of-teaching-excellence-center-and-teaching-services-section"><li class="text">教學卓越中心(TEC)、教服組門口(Office entrance of Teaching Excellence Center and Teaching Services Section)</li></a>
+						<a href="#" class="scene" data-id="28-teaching-services-section"><li class="text">教服組(Teaching Services Section)</li></a>
+						<a href="#" class="scene" data-id="29-office-of-the-director-of-the-teaching-services-section"><li class="text">教服組組長辦公室(Office of the Director of the Teaching Services Section)</li></a>
+						<a href="#" class="scene" data-id="30-tecteaching-excellence-center-1711r"><li class="text">教學卓越中心(TEC/Teaching Excellence Center)-1711R</li></a>
+						<a href="#" class="scene" data-id="31-tecr0010437office-of-the-director-of-the-teaching-excellence-center"><li class="text">教學卓越中心組長辦公室 (Office of the Director of the Teaching Excellence Center)</li></a>
+						<a href="#" class="scene" data-id="32-7entrance-of-the-office-of-academic-affairs"><li class="text">七樓教務處入口(Entrance of the Office of Academic Affairs)</li></a>
+						<a href="#" class="scene" data-id="33-elevator-entrance-from-the-7-floor-to-the-2-floor"><li class="text">前門的七樓往二樓的電梯入口(Elevator entrance from the 7th floor to the second floor of the front door)</li></a>
+					</ul>
+				</li>
+
+				<li class="has-children navbeauty">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智一館往元智七館方向(The direction from the Yuan Ze Building 1 to the Yuan Ze Building 7)</a>
+					<ul>
+						<a href="#" class="scene" data-id="0-the-yzu-logo-in-front-of-the-roundabout"><li class="text">圓環前標誌(The YZU logo in front of the roundabout)</li></a>
+						<a href="#" class="scene" data-id="1-the-entrance-to-the--yuan-ze-building-7"><li class="text">往元智七館入口(The entrance to the Yuan Ze Building 7)</li></a>
+						<a href="#" class="scene" data-id="2-the-north-side-of-the-rock-of-innovation"><li class="text">思新石北側(The north side of the Rock of Innovation)</li></a>
+						<a href="#" class="scene" data-id="3-the-south-side-of-the-rock-of-innovation"><li class="text">思新石南側(The south side of the Rock of Innovation)</li></a>
+						
+					</ul>
+				</li>
+				<li class="has-children navhealth">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智七館一樓(The first floor of the Yuan Ze Building 7)</a>
+					<ul>
+						<a href="#" class="scene" data-id="4-the-red-brick-road-front-the-yuan-ze-building-7"><li class="text">七館前紅磚道(The red brick road front the Yuan Ze Building 7)</li></a>
+						<a href="#" class="scene" data-id="5-the-square-front-the-yuan-ze-building-7"><li class="text">七館前廣場(The square front the Yuan Ze Building 7)</li></a>
+						<a href="#" class="scene" data-id="6-the-yuan-ze-building-7"><li class="text">元智七館(The Yuan Ze Building 7)</li></a>
+						<a href="#" class="scene" data-id="7-the-stairs-from-the-first-floor-to-the-second-floor"><li class="text">一樓往二樓的樓梯(The stairs from the first floor to the second floor)</li></a>
+						<a href="#" class="scene" data-id="8-the-staircase-from-the-first-floor-to-the-second-floor"><li class="text">一樓往二樓的樓梯間(The staircase from the first floor to the second floor)</li></a>
+						<a href="#" class="scene" data-id="14-the-direction-to-the-global-lounge"><li class="text">前往全球交誼廳方向(The direction to the global lounge)</li></a>
+						<a href="#" class="scene" data-id="15-entrance-of-the-global-lounge"><li class="text">全球交誼廳門口(Entrance of the global lounge)</li></a>
+						<a href="#" class="scene" data-id="16-global-lounge"><li class="text">全球交誼廳(Global lounge)</li></a>
+						<a href="#" class="scene" data-id="17-the-direction-to-the-prayer-room"><li class="text">往祈禱室方向(The direction to the prayer room)</li></a>
+						<a href="#" class="scene" data-id="18-prayer-room"><li class="text">祈禱室(Prayer room)</li></a> 
+
+					</ul>
+				</li>
+				<li class="has-children navprimary">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智七館二樓(The second floor of the Yuan Ze Building 7)</a>
+					<ul>
+						<a href="#" class="scene" data-id="9-the-second-floor-of-the-yuan-ze-building-7"><li class="text">七館二樓(The second floor of the Yuan Ze Building 7)</li></a>
+						<a href="#" class="scene" data-id="10-office-entrance-of--the-global-affairs-office"><li class="text">全球事務處辦公室門口(Office entrance of the global affairs office)</li></a>
+						<a href="#" class="scene" data-id="11-global-affairs-office-headquarters-r70207"><li class="text">全球事務處本部辦公室(Global Affairs Office Headquarters)-70207R</li></a>
+						<a href="#" class="scene" data-id="12-the-office-of-cgo"><li class="text">國際長辦公室(The office of CGO)</li></a>
+						<a href="#" class="scene" data-id="13-_overseas-and-mainland-chinese-unit_international-cooperation-unit-r70208"><li class="text">大陸暨橋生交流組_國際合作組辦公室(Overseas and Mainland Chinese Unit_International Cooperation Unit)- 70208R</li></a>
+					</ul>
+				</li>
+				
+				<li class="has-children navprimary">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智一館往元智三館方向(The direction from the Yuan Ze Building 1 to the Yuan Ze Building 3)</a>
+					<ul>
+						<a href="#" class="scene" data-id="0-the-direction-from--the-yuan-ze-building-1-to-road-of-sakura"><li class="text">元智一館往櫻花道方向(The direction from  the Yuan Ze Building 1 to road of sakura)</li></a>
+						<a href="#" class="scene" data-id="1-road-of-sakura"><li class="text">櫻花道(Road of sakura)</li></a>
+						<a href="#" class="scene" data-id="2-the-direction-from-road-of-sakura--to-the-yuan-ze-building-3"><li class="text">櫻花道往元智三館方向((The direction from road of sakura  to the Yuan Ze Building 3)</li></a>
+						<a href="#" class="scene" data-id="3-the-side-door-of-the-yuan-ze-building-3"><li class="text">元智三館側門入口(The side door of the Yuan Ze Building 3)</li></a>
+						
+						
+					</ul>
+				</li>
+				<li class="has-children navprimary">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>
+						往元智三館方向(The direction to the Yuan Ze Building 3)
+						</a>
+					<ul>
+						<a href="#" class="scene" data-id="4-the-west-side-of-the-rock-of-innovation"><li class="text">思新石西側(The west side of the Rock of Innovation)</li></a>
+						<a href="#" class="scene" data-id="5-the-direcition-to-the-yuan-ze-building-3"><li class="text">往元智三館正門方向(The direcition to the Yuan Ze Building 3)</li></a>
+						<a href="#" class="scene" data-id="6-the-entrance-of-the-yuan-ze-building-3"><li class="text">元智三館正門入口((The entrance of the Yuan Ze Building 3)</li></a>
+						
+					</ul>
+				</li>
+				
+				<li class="has-children navprimary">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智三館一樓(The first floor of the Yuan Ze Building 3)</a>
+					<ul>
+						<a href="#" class="scene" data-id="7-the-lobby-of-the-yuan-ze-building-3"><li class="text">元智三館正門大廳((The lobby the Yuan Ze Building 3)</li></a>
+						<a href="#" class="scene" data-id="8-the-direction-to-the-elevator-of-right-side"><li class="text">正門往右側電梯方向(The direction to the elevator of right side)</li></a>
+						<a href="#" class="scene" data-id="9-elevator-entrance-of-the-right-side-first-floor"><li class="text">一樓右側電梯入口(Elevator entrance of the right side first floor)</li></a>
+						<a href="#" class="scene" data-id="10-the-direction-to-the-elevator-of-left-side"><li class="text">正門左側往電梯方向(The direction to the elevator of left side)</li></a>
+						<a href="#" class="scene" data-id="11-elevator-entrance-from-the-first-floor-to-the-third-floor-of-the-left-side"><li class="text">一樓往三樓左側電梯入口(Elevator entrance from the first floor to the third floor of the left side)</li></a>
+						<a href="#" class="scene" data-id="12-the-stairs-from-the-first-floor-to-the-third-floor"><li class="text">一樓往二樓樓梯口(The stairs from the first floor to the second floor)</li></a>
+					</ul>
+				</li>
+				
+				<li class="has-children navprimary">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>元智三館三樓(The third floor of the Yuan Ze Building 3)</a>
+					<ul>
+						<a href="#" class="scene" data-id="13-elevator-entrance-from-the-third-floor-to--the-first-floor-of-the-left-side"><li class="text"></li>三樓往一樓左側電梯入口(Elevator entrance from the third floor to  the first floor of the left side)</a>
+						<a href="#" class="scene" data-id="16-elevator-entrance-from-the-third-floor-to--the-first-floor-of-the-right-side"><li class="text"></li>)三樓往一樓右側電梯入口(Elevator entrance from the third floor to  the first floor of the right side)</a>
+						<a href="#" class="scene" data-id="17-the-stairs-from-the-third-floor-to-the-first-floor"><li class="text">三樓往一樓樓梯口(The stairs from the third floor to the first floor)</li></a>
+						<a href="#" class="scene" data-id="14-3301entrance-of-the-3301r-computer-classroom"><li class="text">3301電腦教室門口(Entrance of the 3301R computer classroom)</li></a>
+						<a href="#" class="scene" data-id="15-3301computer-classroom-3301r"><li class="text">3301電腦教室(Computer classroom)-3301R</li></a>
+						<a href="#" class="scene" data-id="18-3308the-direction-to-3308r"><li class="text">往3308教室方向(The direction to 3308R)</li></a>
+						<a href="#" class="scene" data-id="19-3308aentrance-of-the-3308ar-maker-space"><li class="text">3308A創客基地門口(Entrance of the 3308AR Maker Space)</li></a>
+						<a href="#" class="scene" data-id="20-3308amaker-space-3308ar"><li class="text"></li>3308A創客基地(Maker Space)-3308AR</a>
+						
+					</ul>
+				</li>
+				<li class="has-children navstudent">
+					<a href="http://intelligent.mech.yzu.edu.tw/"><span class="fas fa-stroopwafel"></span>Back</a>
+					<!-- Start of CuterCounter Code -->
+<!-- End of CuterCounter Code -->
+				</li>
+				<li class="has-children navstudent">
+				
+				<a href="https://www.cutercounter.com/" target="_blank"><img src="https://www.cutercounter.com/hits.php?id=hvxnaxdc&nd=6&style=13" border="0" alt="visitor counter"></a>
+	</li>
+				<!--
+				<li class="all">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>View All Rooms</a>
+				</li> 
+				<li class="map">
+					<a href="#0"><span class="fas fa-stroopwafel"></span>View Map</a>
+				</li>-->
+					
+		</nav>
+		
+		
+		<div id="allRooms" class="enabled">
+			<ul>
+				<div class="group first">
+					<h2>Main Areas</h2>
+					<a href="#" class="scene" data-id="0-entrance"><li class="text">Town Entrance Outside</li></a>
+					<a href="#" class="scene" data-id="1-town-entrance-1"><li class="text">Town Entrance 1</li></a>
+					<a href="#" class="scene" data-id="2-town-entrance-2"><li class="text">Town Entrance 2</li></a>
+					<a href="#" class="scene" data-id="3-town-entrance-3"><li class="text">Town Entrance 3</li></a>
+					<a href="#" class="scene" data-id="4-main-reception"><li class="text">Main Reception</li></a>
+					<a href="#" class="scene" data-id="5-main-entrance-inside"><li class="text">Main Entrance Inside</li></a>
+					<a href="#" class="scene" data-id="40-main-entrance-outside"><li class="text">Main Entrance Outside</li></a>
+					<a href="#" class="scene" data-id="6-clock-tower-entrace-middle"><li class="text">Clock Tower Entrace Middle</li></a>
+					<a href="#" class="scene" data-id="7-clock-tower-entrace-inside"><li class="text">Clock Tower Entrace Inside</li></a>
+					<a href="#" class="scene" data-id="8-clock-tower-entrance-outside"><li class="text">Clock Tower Entrance Outside</li></a>
+					<a href="#" class="scene" data-id="63-transport-bridge-entrance-inside"><li class="text">Transport Bridge Entrance Inside</li></a>
+					<a href="#" class="scene" data-id="64-transport-bridge-entrance"><li class="text">Transport Bridge Entrance</li></a>
+					<a href="#" class="scene" data-id="53-reception-balcony"><li class="text">Reception Balcony</li></a>
+					
+					<h2>Student Areas</h2>
+					<a href="#" class="scene" data-id="37-learning-resource-centre"><li class="text">Learning Resource Centre</li></a>
+					<a href="#" class="scene" data-id="38-lecture-theatre-0044"><li class="text">Lecture theatre 0044</li></a>
+					<a href="#" class="scene" data-id="9-als-hub"><li class="text">ALS Hub</li></a>
+					<a href="#" class="scene" data-id="18-careers-pod-entrance"><li class="text">Careers Pod Entrance</li></a>
+					<a href="#" class="scene" data-id="19-careers-pod"><li class="text">Careers Pod</li></a>
+					<a href="#" class="scene" data-id="20-classroom"><li class="text">Classroom</li></a>
+					<a href="#" class="scene" data-id="21-cyber-cafe"><li class="text">Cyber Cafe</li></a>
+					<a href="#" class="scene" data-id="14-bridge"><li class="text">Bridge</li></a>
+					<a href="#" class="scene" data-id="29-he-lounge"><li class="text">HE Lounge</li></a>
+					<a href="#" class="scene" data-id="60-student-services"><li class="text">Student Services</li></a>
+					<a href="#" class="scene" data-id="61-the-bridge"><li class="text">The Bridge</li></a>
+					<a href="#" class="scene" data-id="31-higher-education-corridor"><li class="text">Higher Education Corridor</li></a>
+					<a href="#" class="scene" data-id="32-higher-education-lounge"><li class="text">Higher Education Lounge</li></a>
+								
+								
+		
+				
+				</div>
+				
+				<div class="group">
+					<h2>Building and Engineering</h2>
+					<a href="#" class="scene" data-id="54-science-lab"><li class="text">Science Lab</li></a>
+					<a href="#" class="scene" data-id="41-mc-tec-engineering"><li class="text">MC Tec Engineering</li></a>
+					<a href="#" class="scene" data-id="42-mc-tec-manufacturing"><li class="text">MC Tec Manufacturing</li></a>
+					<a href="#" class="scene" data-id="43-mc-tec-mechanical"><li class="text">MC Tec Mechanical</li></a>
+					<a href="#" class="scene" data-id="15-building-brickwork"><li class="text">Building Brickwork</li></a>
+					<a href="#" class="scene" data-id="16-building-plastering"><li class="text">Building Plastering</li></a>
+					<a href="#" class="scene" data-id="17-building-welding"><li class="text">Building Welding</li></a>
+				  
+					  <h2>Sports Facilities</h2>
+					<a href="#" class="scene" data-id="25-gym"><li class="text">Gym</li></a>
+					<a href="#" class="scene" data-id="26-gymworld"><li class="text">Gymworld</li></a>
+					<a href="#" class="scene" data-id="22-dance-studio"><li class="text">Dance Studio</li></a>
+					<a href="#" class="scene" data-id="68-viewing-gallery"><li class="text">Viewing Gallery</li></a>
+					<a href="#" class="scene" data-id="59-sports-hall"><li class="text">Sports Hall</li></a>
+					
+					<h2>Health and Beauty</h2>
+					<a href="#" class="scene" data-id="10-barbers"><li class="text">Barbers</li></a>
+					<a href="#" class="scene" data-id="11-beauty-room-2"><li class="text">Beauty Room 2</li></a>
+					<a href="#" class="scene" data-id="12-beauty-treatment-room"><li class="text">Beauty Treatment Room</li></a>
+					<a href="#" class="scene" data-id="27-hair-salon-1"><li class="text">Hair Salon 1</li></a>
+					<a href="#" class="scene" data-id="28-hair-salon-2"><li class="text">Hair Salon 2</li></a>
+					<a href="#" class="scene" data-id="50-nail-bar"><li class="text">Nail Bar</li></a>
+					<a href="#" class="scene" data-id="58-spa-and-sauna"><li class="text">Spa and Sauna</li></a>
+					<a href="#" class="scene" data-id="30-health-care-ward"><li class="text">Health Care Ward.</li></a>
+					
+				</div>
+				
+				<div class="group last">
+					<h2>Creative and Digital</h2>
+					<a href="#" class="scene" data-id="45-music-corridor"><li class="text">Music Corridor</li></a>
+					<a href="#" class="scene" data-id="46-music-fe-control-room-2"><li class="text">Music FE Control Room 2</li></a>
+					<a href="#" class="scene" data-id="47-music-fe-control-room-7"><li class="text">Music FE Control Room 7</li></a>
+					<a href="#" class="scene" data-id="48-music-lab-1"><li class="text">Music Lab 1</li></a>
+					<a href="#" class="scene" data-id="49-music-lab-2"><li class="text">Music Lab 2</li></a>
+					<a href="#" class="scene" data-id="52-photography-studio"><li class="text">Photography Studio</li></a>
+					<a href="#" class="scene" data-id="66-video-time-base-control"><li class="text">Video Time Base control</li></a>
+					<a href="#" class="scene" data-id="67-video-time-based-studio"><li class="text">Video Time Based Studio</li></a>
+					<a href="#" class="scene" data-id="56-sound-control-room"><li class="text">Sound Control Room</li></a>
+					<a href="#" class="scene" data-id="57-sound-recording-studio"><li class="text">Sound Recording Studio</li></a>
+					<a href="#" class="scene" data-id="39-mac-suite"><li class="text">Mac Suite</li></a>
+					<a href="#" class="scene" data-id="34-it-lab"><li class="text">IT Lab</li></a>
+					<a href="#" class="scene" data-id="62-theatre"><li class="text">Theatre</li></a>
+					
+					<h2>Other Areas</h2>
+					<a href="#" class="scene" data-id="13-brasserie"><li class="text">Brasserie</li></a>
+					<a href="#" class="scene" data-id="44-mock-fuselage"><li class="text">Mock Fuselage</li></a>
+					<a href="#" class="scene" data-id="23-demo-kitchen"><li class="text">Demo Kitchen</li></a>
+					<a href="#" class="scene" data-id="24-fashion-classroom"><li class="text">Fashion Classroom</li></a>
+					<a href="#" class="scene" data-id="33-independent-living"><li class="text">Independent Living</li></a>
+					<a href="#" class="scene" data-id="35-job-shop"><li class="text">Job Shop</li></a>
+					<a href="#" class="scene" data-id="36-kitchen"><li class="text">Kitchen</li></a>
+					<a href="#" class="scene" data-id="55-shop-on-the-street"><li class="text">Shop on the Street</li></a>
+					<a href="#" class="scene" data-id="65-travel-agency"><li class="text">Travel Agency</li></a>
+					
+				</div>
+			</ul>
+		</div>
+		
+		<div class="mainMap first centered" id="map">
+			<div class="inside">
+				<a class="hotspot main">&nbsp;</a>
+				<a class="hotspot sports">&nbsp;</a>
+				<a class="hotspot boys">&nbsp;</a>
+				<a class="hotspot primary">&nbsp;</a>
+				<a class="hotspot secondary">&nbsp;</a>
+			</div>
+			<a href="#" class="close"><i class="fa fa-times"></i> Close</a>
+		</div>
+		
+		<div class="content-wrapper">
+			<div id="pano"></div>
+		</div>
+				
+	</main> <!-- close Main -->
+		</div> <!-- close sceneList -->
+		
+		<div id="titleBar">
+		  <h1 class="sceneName"></h1>
+		</div>
+		
+		<a href="#" id="autorotateToggle">
+		  <img class="icon off" src="img/play.png">
+		  <img class="icon on" src="img/pause.png">
+		</a>
+		
+		<a href="#" id="fullscreenToggle">
+		  <img class="icon off" src="img/fullscreen.png">
+		  <img class="icon on" src="img/windowed.png">
+		</a>
+				
+		
+	
+		<a href="#0" id="sceneListToggle" class="cd-nav-trigger"><span></span>
+		  </a>
+		<a href="#" id="viewUp" class="viewControlButton viewControlButton-1">
+		  <img class="icon" src="img/up.png">
+		</a>
+		<a href="#" id="viewDown" class="viewControlButton viewControlButton-2">
+		  <img class="icon" src="img/down.png">
+		</a>
+		<a href="#" id="viewLeft" class="viewControlButton viewControlButton-3">
+		  <img class="icon" src="img/left.png">
+		</a>
+		<a href="#" id="viewRight" class="viewControlButton viewControlButton-4">
+		  <img class="icon" src="img/right.png">
+		</a>
+		<a href="#" id="viewIn" class="viewControlButton viewControlButton-5">
+		  <img class="icon" src="img/plus.png">
+		</a>
+		<a href="#" id="viewOut" class="viewControlButton viewControlButton-6">
+		  <img class="icon" src="img/minus.png">
+		</a>
+		
+
+<script src="vendor/es5-shim.js"></script>
+<script src="vendor/eventShim.js"></script>
+<script src="vendor/classList.js"></script>
+<script src="vendor/requestAnimationFrame.js" ></script>
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/jquery.menu-aim.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>
